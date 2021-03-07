@@ -1,11 +1,11 @@
 
 exports.seed = async function(knex) {
 	await knex("ingredients").insert([
-		{ name: "Bread" },
-		{ name: "Peanut Butter" },
-		{ name: "Grape Jelly" },
-		{ name: "Microwave Popcorn" },
-		{ name: "Fruit Loops" },
-		{ name: "Milk" },
+		{ ingredient: "Bread" },
+		{ ingredient: "Peanut Butter" },
+		{ ingredient: "Grape Jelly" },
+		{ ingredient: "Microwave Popcorn" },
+		{ ingredient: "Fruit Loops" },
+		{ ingredient: "Milk" },
 	])
 }
