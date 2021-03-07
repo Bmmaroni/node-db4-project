@@ -13,6 +13,7 @@ exports.up = async function(knex) {
 	await knex.schema.createTable("instructions", (table) => {
 		table.increments("id")
 		table.text('step').notNull().unique()
+		table.integer("step_number").notNull()
 		table.integer("recipe_id").notNull().references("id").inTable("recipes").onDelete("CASCADE").onUpdate("CASCADE")
 	})
 
